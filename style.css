@@ -1,0 +1,448 @@
+   /* Reset e Configurações Básicas */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Cabeçalho e Navegação */
+ header{
+    display: block;
+    background: #45a049;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    
+ }
+
+ header img{
+    padding: 0%;
+
+    margin-left: 45%;
+ }
+
+
+ .text-area{
+    margin-left: 46%;
+    align-items: flex-start;
+ }
+
+nav {
+    background-color: #45a049;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e0e0e0;
+}
+
+/* Layout Principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+/* Estilo dos Artigos */
+.article {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+}
+
+.article h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.article h3 {
+    color: #45a049;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.article p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.article ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.article li {
+    margin-bottom: 0.5rem;
+}
+
+/* Barra Lateral */
+.sidebar {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5rem;
+}
+
+.categories li {
+    margin-bottom: 0.8rem;
+    list-style: none;
+}
+
+.categories a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.categories a:hover {
+    color: #4CAF50;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* Classes Utilitárias */
+.tag {
+    background-color: #e8f5e9;
+    color: #4CAF50;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 0.3rem;
+}
+
+.tag:hover{
+    background-color:#4CAF50;
+    color:white ;
+    transition: 0.90s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.destaque {
+    background-color: #f1f8e9;
+    padding: 1rem;
+    border-left: 4px solid #4CAF50;
+    margin: 1rem 0;
+}
+
+.section-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: #4CAF50;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.calculator {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.calculator input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.calculator button {
+    width: 100%;
+    padding: 12px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.calculator button:hover {
+    background: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #f5f5f5;
+    display: none;
+}
+
+
+footer {  
+    display: flex; /* Usando flexbox para alinhamento */  
+    align-items: center; /* Alinha o texto e a imagem verticalmente */  
+    background: #333;  
+    color: white;  
+    justify-content: center; /* Centraliza os itens no footer */  
+}  
+
+footer img {  
+    width: 150px; /* Ajuste conforme o tamanho desejado */  
+    height: auto; /* Mantém a proporção da imagem */  
+    margin-left: 5px; /* Espaçamento entre o texto e a imagem */  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    background-color: #45a049;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e0e0e0;
+}
+
+/* Layout Principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+/* Estilo dos Artigos */
+.article {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.article h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.article h3 {
+    color: #45a049;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+/* Barra Lateral */
+.sidebar {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5rem;
+}
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 768px) {
+    /* Layout Principal */
+    main {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    /* Ajustes de Navegação */
+    nav {
+        padding: 0.5rem;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
+        display: inline-block;
+        padding: 0.5rem;
+    }
+
+    /* Ajustes dos Artigos */
+    .article {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .article h2 {
+        font-size: 1.5rem;
+    }
+
+    .article h3 {
+        font-size: 1.2rem;
+    }
+
+    .article img {
+        height: 200px;
+    }
+
+    /* Ajustes da Barra Lateral */
+    .sidebar {
+        position: static;
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        padding: 0.4rem;
+        font-size: 0.8rem;
+    }
+
+    .article {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Elementos Extras */
+.tag {
+    background-color: #e8f5e9;
+    color: #4CAF50;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 0.3rem;
+}
+
+.destaque {
+    background-color: #f1f8e9;
+    padding: 1rem;
+    border-left: 4px solid #4CAF50;
+    margin: 1rem 0;
+}
+
+/* Formulário Newsletter */
+form input,
+form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
